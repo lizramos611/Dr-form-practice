@@ -90,9 +90,10 @@
           </select>
     </div>
 
-    <div class="doctor">
-
           <!-- Preferred Physician -->
+       
+    <div class="doctor">
+   
           <label for="doctor">Preferred Physician</label>
           <input type="radio" id="smith" name="doctor" value="smith">Dr. Smith
           <input type="radio" id="hope" name="doctor" value="hope">Dr. Hope
@@ -103,6 +104,7 @@
 
 
           <!-- upload file -->
+
           <div class="file">
     <p>Upload any files for visit. Health insurance cards and medical history.</p>          
     <input type="file" id="myFile" name="filename">
@@ -112,7 +114,7 @@
             <!-- reason for visit -->
             <div class="reason">
             <p><label for="reason">Please describe the reason for this visit</label></p>
-            <textarea id="reason" name="reason" rows="4" cols="50"></textarea>
+            <textarea id="reason" name="reason" rows="4" cols="50" required></textarea>
             <br>
             <input type="submit" value="Submit">   
        </div>
