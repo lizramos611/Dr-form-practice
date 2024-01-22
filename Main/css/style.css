@@ -69,7 +69,24 @@ display: flexbox;
    margin-left: 10px;
 
 }
+.picturecontainer{
+    position: relative;
+    text-align: center;
+    color: var(--white);
+    background-color: var(--border);
+   
+}
+/* controlling img brightness to fade image w text overtop */
 img{
-    width: 100%;
-    height: 350px;
+    width: 575px;
+    height: 275px;
+    filter: brightness(30%);
+}
+
+.imgtext{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
 }
