@@ -1,0 +1,75 @@
+*{
+    font-family: helvetica, Arial, sans-serif;
+}
+
+:root{
+    --white: whitesmoke;
+    --blue: #9DD9F3;
+    --border: #77c3ec;
+}
+
+h1, h2 {
+    background-color: var(--blue);
+    padding: 15px;
+    text-align: center;
+    border: 2px solid var(--border);
+    margin-bottom: 15px;
+}
+
+h2{
+    margin-top: 15px;
+}
+
+.name, .namespots{
+    display: flex;
+    margin-left: 15px;
+    justify-content: flex-start;
+}
+
+.first, .middle {
+    margin-right: 10px;
+}
+input{
+    border-radius: 3px ;
+    border: solid 2px #dadada;
+ 
+}
+.birthdate, .number{
+    margin-left: 15px;
+    margin-bottom: 15px;
+}
+
+.patient{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.visit{
+    margin-left: 15px;
+}
+
+p{
+    margin-left: 10px;
+    margin-right: 10px;
+    text-align: center;
+}
+.appointment{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.date, .time{
+    margin: 10px;
+}
+.doctor{
+display: flexbox;
+    margin-bottom: 20px;
+   flex-direction: column;
+   margin-top: 10px;
+   margin-left: 10px;
+
+}
+img{
+    width: 100%;
+    height: 350px;
+}

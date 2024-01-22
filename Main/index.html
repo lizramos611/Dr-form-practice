@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doctor Appointment Form Practice</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+
+
+<body>
+<div class="picture">
+    <img src="./img/pexels-agung-pandit-wiguna-1128318.jpg" alt="family photo">
+
+
+</div>
+    <h1>Patient Information</h1>
+
+<form action="" method="GET">
+
+    <!-- div for name -->
+<div class="patient">
+
+    <label for="Name" class="name">Name</label>
+    <div class="namespots">
+    <!-- First Name -->
+   
+    <input type="text" id="fname" name="fname" placeholder="First" required class="first">
+
+    <!-- Middle Initial -->
+   
+    <input type="text" id="middle" name="middle" placeholder="Middle" class="middle">
+
+
+    <!-- Last Name -->
+   
+    <input type="text" id="lname" name="lname" placeholder="Last" class="Last">
+</div>
+
+
+
+    <!-- Birth Date -->
+    <div class="birthdate">
+    <label for="birthdate">Birth Date</label>
+    <input type="date" id="birthdate" name="birthdate" required>
+</div>
+
+
+
+    <!--  Phone Number-->
+   <div class="number">
+    <label for="number">Phone Number</label>
+    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required placeholder="(___) - ___ - ____ " onkeypress="validate_int(this)" onkeyup="phone_number_mask()"> </form>
+   </div>
+   
+
+    <!-- office visit -->
+    <div class="visit">
+      <label for="middle">Is this your first visit to our offices?</label>
+      <input type="radio" id="yes" name="visits" value="yes">Yes
+      <input type="radio" id="no" name="visits" value="no">No
+    </div>
+
+</div>
+
+<!-- Apt. info request -->
+<h2>Appointment Information Request</h2>
+<p>All Patient request are on a first come basis. We will try and get an appointment as close to the date and time as possible. The office will call with questions if need. Thank you.
+</p>
+
+<div class="appointment">
+
+
+    <!-- Date -->
+    <div class="date">
+    <label for="date">Date</label>
+    <input type="date" id="date" name="date" required>
+    </div>
+
+
+        <!-- Time -->
+        <div class="time">
+        <label for="time">Time</label>
+        <select id="time" name="time">
+            <option value="morning">Morning</option>
+            <option value="afternoon">Afternoon</option>
+            <option value="evening">Evening</option>
+          </select>
+    </div>
+
+    <div class="doctor">
+
+          <!-- Preferred Physician -->
+          <label for="doctor">Preferred Physician</label>
+          <input type="radio" id="smith" name="doctor" value="smith">Dr. Smith
+          <input type="radio" id="hope" name="doctor" value="hope">Dr. Hope
+          <input type="radio" id="none" name="doctor" value="none">No Preference
+          <input type="radio" id="little" name="doctor" value="smith">Dr. Little
+          <input type="radio" id="rodriguez" name="doctor" value="smith">Dr. Rodriguez
+    </div>
+
+
+          <!-- upload file -->
+          <div class="file">
+    <p>Upload any files for visit. Health insurance cards and medical history.</p>          
+    <input type="file" id="myFile" name="filename">
+</div>
+
+
+            <!-- reason for visit -->
+            <div class="reason">
+            <p><label for="reason">Please describe the reason for this visit</label></p>
+            <textarea id="reason" name="reason" rows="4" cols="50"></textarea>
+            <br>
+            <input type="submit" value="Submit">   
+       </div>
+       
+
+        </div>
+</body>
+</html>
